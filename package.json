@@ -16,7 +16,9 @@
     "export": "cross-env NODE_ENV=production next export",
     "cli": "pankod-cli add",
     "storybook": "start-storybook -s ./public/static -p 6006",
-    "build-storybook": "build-storybook -s ./public/static  -c .storybook -o .storybookout"
+    "build-storybook": "build-storybook -s ./public/static  -c .storybook -o .storybookout",
+    "docker_rebuild": "docker compose up -d --build",
+    "into_docker": "docker compose exec -it dev-site bash"
   },
   "dependencies": {
     "@next/bundle-analyzer": "^9.4.4",
